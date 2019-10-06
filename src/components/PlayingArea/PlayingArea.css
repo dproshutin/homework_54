@@ -1,5 +1,6 @@
 .PlayingArea {
     margin: 30px auto 0;
+    padding: 25px;
     width: 350px;
     height: 350px;
     background-color: white;
