@@ -1,8 +1,15 @@
 .PlayingArea {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: stretch;*/
     margin: 30px auto 0;
-    padding: 25px;
-    width: 350px;
-    height: 350px;
+    padding: 25px 24px 24px 25px;
+    width: 357px;
+    height: 357px;
     background-color: white;
     border: 1px solid black;
+}
+* {
+    box-sizing: border-box;
 }

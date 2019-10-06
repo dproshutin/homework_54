@@ -1,9 +1,10 @@
 import React from 'react';
 import './PlayingArea.css';
 
-const PlayingArea = () => {
+const PlayingArea = (props) => {
+
     return (
-        <div className="PlayingArea"></div>
+        <div className="PlayingArea">{props.children}</div>
     );
 };
 
