@@ -1,4 +1,4 @@
-.closed {
+.ClosedField {
     float: left;
     margin-right: 1px;
     margin-top: 1px;
@@ -6,6 +6,9 @@
     height: 50px;
     background: #ccc;
     color: #ccc;
+}
+.ClosedField.OpenedField {
+    background: white;
 }
 * {
     box-sizing: border-box;

@@ -3,6 +3,7 @@ import './App.css';
 import PlayingArea from "../components/PlayingArea/PlayingArea";
 import Cell from "../components/Cell/Cell";
 import ResetButton from "../components/ResetButton/ResetButton";
+import NumberAttempts from "../components/NumberAttempts/NumberAttempts";
 
 class App extends Component {
   state = {cells: []};
@@ -38,6 +39,10 @@ class App extends Component {
                   })
                 }
               </PlayingArea>
+                <NumberAttempts
+                    number={0}
+                >
+                </NumberAttempts>
                 <ResetButton
                     reset={this.resetGame}
                 >

@@ -2,9 +2,9 @@ import React from 'react';
 import './Cell.css';
 
 const Cell = (props) => {
-    console.log({props});
+    const fieldClasses = ["ClosedField"];
     return (
-        <div className="closed">
+        <div className="closedField">
 
             {props.id}
         </div>
