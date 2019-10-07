@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import PlayingArea from "../components/PlayingArea/PlayingArea";
 import Cell from "../components/Cell/Cell";
+import ResetButton from "../components/ResetButton/ResetButton";
 
 class App extends Component {
   state = {cells: []};
@@ -15,6 +16,9 @@ class App extends Component {
     }
     this.setState({cells});
     console.log(this.state.cells);
+  };
+  resetGame = () => {
+
   };
     render() {
         return (
@@ -34,6 +38,10 @@ class App extends Component {
                   })
                 }
               </PlayingArea>
+                <ResetButton
+                    reset={this.resetGame}
+                >
+                </ResetButton>
             </div>
         );
     }
