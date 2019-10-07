@@ -41,9 +41,8 @@ class App extends Component {
         const cells =
             [...this.state.cells];
         cells[id].clicked = 1;
-        console.log(cells);
 
-        // this.setState({cells});
+        this.setState({cells});
     };
     render() {
         return (
@@ -58,7 +57,6 @@ class App extends Component {
                         <Cell
                             key={item.id}
                             clicked={item.clicked}
-                            click={this.openCell(item.id)}
                         />
                     )
                   })
