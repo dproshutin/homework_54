@@ -3,8 +3,14 @@ import './Cell.css';
 
 const Cell = (props) => {
     const fieldClasses = ["ClosedField"];
+    if (props.click) {
+        fieldClasses.push("OpenedField");
+    }
     return (
-        <div className="closedField">
+        <div
+            className={fieldClasses.join(" ")}
+            onClick={props.click}
+        >
 
             {props.id}
         </div>

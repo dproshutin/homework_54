@@ -6,9 +6,11 @@
     height: 50px;
     background: #ccc;
     color: #ccc;
+    cursor: pointer;
 }
 .ClosedField.OpenedField {
     background: white;
+    cursor: auto;
 }
 * {
     box-sizing: border-box;
